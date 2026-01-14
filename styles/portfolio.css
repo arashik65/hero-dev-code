@@ -25,6 +25,12 @@
      color: white;
      cursor: pointer;
 }
+.btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
 .text-center{
     text-align: center;
 }
@@ -35,8 +41,11 @@ header{
    background: url(../images/developer.png), url(../images/header_bg.png),#FFF8F3;
    background-position: 23px 38px, bottom right;
    background-repeat: no-repeat;
+   background-size: 90px,43%;
    
 }
+
+
 nav{
     width: 71%;
     max-width: 1140px;
@@ -234,4 +243,85 @@ footer .footer-container{
     border: none;
     color: #757575;
 }
+.hide{
+    display: none !important;
+}
+@media screen and (max-width:576px){
+    #skills .skills-container {
+    width: 95%;
+   
+} 
+  .btn-group{
+    justify-content: center;
+}
+     .btn-group{
+    justify-content: center;
+}    
+    header {
+    background-color: #FFF8F3;
+    background:  url(../images/header_bg.png), #FFF8F3;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    
+}
+   
+    nav{
+       gap: 20px;
+    }
+    nav .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #banner{
+        margin: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+    #banner .banner-image img{
+        width: 100%;
+    }
+    #banner .banner-containt h1{
+        font-size: 44px;
+    }
 
+     #about , 
+     #skills,
+      #resume{
+    padding-top: 60px;
+}
+   #about .about-container{
+        padding: 20px;
+   }
+   #about .about-container .about-info{
+       gap: 14px;
+   }
+
+
+
+   #skills .skills-container .skill-box,#about .about-container .about-info ,
+   footer .footer-container , #resume .resume-container , nav , #banner
+   {
+      flex-direction: column;
+   }
+   .skill-box .skill-card{
+     max-width: 100%;
+   }
+
+     #resume .resume-container{
+        margin-top: 60px;
+     }
+     .resume-card{
+        margin-right: 10px;
+     }
+
+
+
+
+   .footer-container form input[type="text"], .footer-container form textarea {
+    width: 100%;
+}
+
+
+
+
+}
