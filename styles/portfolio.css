@@ -321,7 +321,13 @@ footer .footer-container{
     width: 100%;
 }
 
+}
+@media screen and (min-width:576px) and (max-width:992px){
+    
 
-
-
+   #skills .skills-container .skill-box,#about .about-container .about-info ,
+   footer .footer-container , #resume .resume-container , nav , #banner
+   {
+      flex-direction: column;
+   }
 }
